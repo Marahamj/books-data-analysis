@@ -1,31 +1,36 @@
-# books-data-analysis
+Football Match Data Analysis and Preprocessing
 
 ## Overview
 
-This project demonstrates data preprocessing and exploratory data analysis (EDA) using a books dataset. The workflow includes cleaning the data, converting categorical values, normalizing numerical features, and visualizing the distribution of book prices.
+This project focuses on preprocessing and analyzing football match data using Python. The workflow includes cleaning the dataset, extracting numerical features from match results, applying feature normalization, and creating visualizations to better understand team performance.
 
 ---
 
 ## Dataset
 
-The project uses a dataset containing information about books, including:
+The dataset contains football match information, including:
 
-- Title
-- Price
-- Rating
+- Team Name
+- Opponent Team
+- Match Date
+- Match Result
+- Team Goals
+- Opponent Goals
 
 ---
 
 ## Project Workflow
 
 - Load the dataset
-- Data cleaning
-- Convert price values to numeric format
-- Remove unnecessary characters
-- Convert book ratings from text to numeric values
-- Calculate descriptive statistics
-- Normalize prices using Min-Max Scaling
-- Visualize the price distribution
+- Remove duplicate records
+- Clean column names and text values
+- Convert match dates to datetime format
+- Extract goals from match results
+- Create match status labels (Win, Loss, Draw)
+- Normalize goal features using Min-Max Scaling
+- Generate statistical summaries
+- Visualize match outcomes and goal distributions
+- Export the processed dataset
 
 ---
 
@@ -44,21 +49,32 @@ The project uses a dataset containing information about books, including:
 ## Data Processing Techniques
 
 - Data Cleaning
-- Feature Transformation
+- Feature Extraction
+- Date Conversion
 - Min-Max Normalization
-- Descriptive Statistics
+- Exploratory Data Analysis (EDA)
 - Data Visualization
+
+---
+
+## Visualizations
+
+The project includes several visualizations, including:
+
+- Distribution of Match Results
+- Distribution of Team Goals
+- Distribution of Normalized Goals
+- Relationship between Team Goals and Opponent Goals
 
 ---
 
 ## Skills Demonstrated
 
 - Data Cleaning
-- Data Wrangling
-- Exploratory Data Analysis (EDA)
+- Data Preprocessing
 - Feature Engineering
-- Data Normalization
+- Feature Normalization
+- Exploratory Data Analysis (EDA)
 - Data Visualization
-- Python Data Analysis
-
----
+- Statistical Analysis
+- Python for Data Analysis
